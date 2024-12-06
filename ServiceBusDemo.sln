@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{D68FAF4D
 		global.json = global.json
 		README.md = README.md
 		.gitignore = .gitignore
+		.github\workflows\ci.yml = .github\workflows\ci.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example02", "src\Example02\Example02.csproj", "{C5AA6BD9-2F7B-4F7C-AE2E-3BAE12B34E29}"
