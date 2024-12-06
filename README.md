@@ -15,5 +15,7 @@ Playing with service bus
 >
 > :four: `Example04` : use worker template with [MassTransit](https://masstransit-project.com)
 >
+> :five: `Example05` : use worker template with [Wolverine](https://wolverinefx.net)
+> 
 
-**`Tools`** : net 8.0, servicebus, masstransit
+**`Tools`** : net 8.0, servicebus, masstransit, wolverine

@@ -25,8 +25,6 @@ public static class DependencyInjection
     {
         var hostSettings = builder.Configuration.GetHostSettings();
 
-        builder.Services.AddHostedService<MessageProducer>();
-
         builder.Services.AddMassTransit(configure =>
         {
             configure.SetKebabCaseEndpointNameFormatter();
@@ -37,6 +35,8 @@ public static class DependencyInjection
                 cfg.ConfigureEndpoints(context);
             });
         });
+
+        builder.Services.AddHostedService<MessageProducer>();
     }
 
     private static HostSettings GetHostSettings(this ConfigurationManager configuration)

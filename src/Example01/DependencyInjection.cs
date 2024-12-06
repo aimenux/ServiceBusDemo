@@ -22,15 +22,15 @@ public static class DependencyInjection
 
     private static void AddServiceBus(this HostApplicationBuilder builder)
     {
-        builder.Services.AddHostedService<MessageConsumer>();
-        builder.Services.AddHostedService<MessageProducer>();
-
         builder.Services.AddSingleton(sp =>
         {
             var settings = sp.GetRequiredService<IOptions<Settings>>().Value;
             var client = GetServiceBusClient(settings);
             return client;
         });
+
+        builder.Services.AddHostedService<MessageConsumer>();
+        builder.Services.AddHostedService<MessageProducer>();
     }
 
     private static ServiceBusClient GetServiceBusClient(Settings settings)
