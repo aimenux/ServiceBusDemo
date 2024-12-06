@@ -20,7 +20,7 @@ public sealed class MessageConsumer : IConsumer<Message>
     public async Task Consume(ConsumeContext<Message> context)
     {
         _logger.LogConsumedMessage(context.Message.Id);
-        
+
         await Task.Delay(_settings.ConsumerDelay, context.CancellationToken);
     }
 }

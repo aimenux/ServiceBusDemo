@@ -24,7 +24,7 @@ public sealed class MessageProducer : BackgroundService
         using var scope = _factory.CreateScope();
         var sendEndpointProvider = scope.ServiceProvider.GetRequiredService<ISendEndpointProvider>();
         var sendEndpoint = await sendEndpointProvider.GetSendEndpoint(new Uri($"queue:{_settings.QueueName}"));
-        
+
         while (!cancellationToken.IsCancellationRequested)
         {
             var message = new Message();

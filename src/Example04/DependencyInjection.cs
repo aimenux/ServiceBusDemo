@@ -24,7 +24,7 @@ public static class DependencyInjection
     private static void AddServiceBus(this HostApplicationBuilder builder)
     {
         var hostSettings = builder.Configuration.GetHostSettings();
-        
+
         builder.Services.AddHostedService<MessageProducer>();
 
         builder.Services.AddMassTransit(configure =>
