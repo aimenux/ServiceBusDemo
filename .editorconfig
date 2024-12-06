@@ -1,0 +1,52 @@
+root = true
+
+# All files
+[*]
+indent_style = space
+
+# C# files
+[*.cs]
+
+# Indentation and spacing
+indent_size = 4
+tab_width = 4
+
+# New line preferences
+end_of_line = lf
+insert_final_newline = false
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/IDE0005
+dotnet_diagnostic.IDE0005.severity = error
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/IDE0008
+dotnet_diagnostic.IDE0008.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/IDE0046
+dotnet_diagnostic.IDE0046.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/IDE0160
+dotnet_diagnostic.IDE0160.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/IDE0290
+dotnet_diagnostic.IDE0290.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1034
+dotnet_diagnostic.CA1034.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1056
+dotnet_diagnostic.CA1056.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062
+dotnet_diagnostic.CA1062.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1515
+dotnet_diagnostic.CA1515.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1724
+dotnet_diagnostic.CA1724.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1725
+dotnet_diagnostic.CA1725.severity = none
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2007
+dotnet_diagnostic.CA2007.severity = none

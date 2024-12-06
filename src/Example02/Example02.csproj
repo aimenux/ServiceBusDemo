@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <UserSecretsId>ServiceBusDemo-Example02-UserSecrets</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Messaging.ServiceBus" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" />
+        <PackageReference Include="System.Text.Json" />
+    </ItemGroup>
+    
+</Project>
