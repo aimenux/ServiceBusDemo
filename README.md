@@ -13,10 +13,7 @@ Playing with service bus
 >
 > :three: `Example03` : use worker template with [ServiceBusProcessor](https://learn.microsoft.com/en-us/dotnet/api/azure.messaging.servicebus.servicebusprocessor)
 >
-> To run the demo, type the following commands :
-> - `dotnet run --project .\src\Example01`
-> - `dotnet run --project .\src\Example02`
-> - `dotnet run --project .\src\Example03`
+> :four: `Example04` : use worker template with [MassTransit](https://masstransit-project.com)
 >
 
-**`Tools`** : net 8.0, servicebus
+**`Tools`** : net 8.0, servicebus, masstransit

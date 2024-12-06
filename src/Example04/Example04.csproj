@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <UserSecretsId>ServiceBusDemo-Example04-UserSecrets</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit.Azure.ServiceBus.Core" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" />
+    </ItemGroup>
+    
+</Project>
