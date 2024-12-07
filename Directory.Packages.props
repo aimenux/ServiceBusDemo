@@ -4,9 +4,12 @@
     <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
   <ItemGroup>
+    <PackageVersion Include="Azure.Identity" Version="1.13.1" />
     <PackageVersion Include="Azure.Messaging.ServiceBus" Version="7.18.2" />
     <PackageVersion Include="MassTransit.Azure.ServiceBus.Core" Version="8.3.3" />
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageVersion Include="Rebus.AzureServiceBus" Version="10.2.0" />
+    <PackageVersion Include="Rebus.ServiceProvider" Version="10.3.0" />
     <PackageVersion Include="System.Text.Json" Version="8.0.5" />
     <PackageVersion Include="WolverineFx.AzureServiceBus" Version="3.4.0" />
   </ItemGroup>
