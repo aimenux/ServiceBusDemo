@@ -10,6 +10,8 @@
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
     <PackageVersion Include="Rebus.AzureServiceBus" Version="10.2.0" />
     <PackageVersion Include="Rebus.ServiceProvider" Version="10.3.0" />
+    <PackageVersion Include="SlimMessageBus.Host.AzureServiceBus" Version="2.6.1" />
+    <PackageVersion Include="SlimMessageBus.Host.Serialization.SystemTextJson" Version="2.6.1" />
     <PackageVersion Include="System.Text.Json" Version="8.0.5" />
     <PackageVersion Include="WolverineFx.AzureServiceBus" Version="3.4.0" />
   </ItemGroup>

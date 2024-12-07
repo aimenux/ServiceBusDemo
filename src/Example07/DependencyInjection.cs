@@ -1,12 +1,13 @@
-﻿using Example05.Configuration;
-using Example05.Consumers;
-using Example05.Contracts;
-using Example05.Producers;
+﻿using Example07.Configuration;
+using Example07.Contracts;
+using Example07.Extensions;
+using Example07.Producers;
 using Microsoft.Extensions.Options;
-using Wolverine;
-using Wolverine.AzureServiceBus;
+using SlimMessageBus.Host;
+using SlimMessageBus.Host.AzureServiceBus;
+using SlimMessageBus.Host.Serialization.SystemTextJson;
 
-namespace Example05;
+namespace Example07;
 
 public static class DependencyInjection
 {
@@ -26,14 +27,18 @@ public static class DependencyInjection
     {
         var settings = builder.Configuration.GetSettings();
 
-        builder.UseWolverine(options =>
+        builder.Services.AddSlimMessageBus(cfg =>
         {
-            options.UseAzureServiceBus(settings.ConnectionString).AutoProvision();
-            options.PublishMessage<Message>().ToAzureServiceBusQueue(settings.QueueName);
-            options.ListenToAzureServiceBusQueue(settings.QueueName);
-        });
+            cfg.WithProviderServiceBus(x =>
+            {
+                x.ConnectionString = settings.ConnectionString;
+            });
 
-        builder.Services.AddTransient<MessageConsumer>();
+            cfg.AddConsumers();
+            cfg.AddJsonSerializer();
+            cfg.Consume<Message>(x => x.Queue(settings.QueueName));
+            cfg.Produce<Message>(x => x.DefaultQueue(settings.QueueName));
+        });
 
         builder.Services.AddHostedService<MessageProducer>();
     }

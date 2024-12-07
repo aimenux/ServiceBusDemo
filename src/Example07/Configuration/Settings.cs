@@ -1,4 +1,4 @@
-﻿namespace Example06.Configuration;
+﻿namespace Example07.Configuration;
 
 public sealed record Settings
 {

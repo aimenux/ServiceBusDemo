@@ -2,7 +2,7 @@
 
 # ServiceBusDemo
 ```
-Playing with service bus
+Using various ways to send and receive messages to/from azure service bus
 ```
 
 > In this repo, i m using [service bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) in order to send and receive messages.
@@ -18,6 +18,8 @@ Playing with service bus
 > :five: `Example05` : use worker template with [Wolverine](https://wolverinefx.net)
 >
 > :six: `Example06` : use worker template with [Rebus](https://github.com/rebus-org/Rebus)
+>
+> :seven: `Example07` : use worker template with [SlimMessageBus](https://github.com/zarusz/SlimMessageBus)
 > 
 
-**`Tools`** : net 8.0, servicebus, masstransit, wolverine, rebus
+**`Tools`** : net 8.0, servicebus, masstransit, wolverine, rebus, slim-message-bus
