@@ -5,7 +5,7 @@
 Using various ways to send and receive messages to/from azure service bus
 ```
 
-> In this repo, i m using [service bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) in order to send and receive messages.
+> In this repo, i m using various ways in order to send and receive messages to/from [azure service bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview).
 >
 > :one: `Example01` : use worker template with [ServiceBusClient](https://learn.microsoft.com/en-us/dotnet/api/azure.messaging.servicebus.servicebusclient)
 >
